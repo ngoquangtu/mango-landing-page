@@ -1,0 +1,137 @@
+---
+const partners = [
+{
+    name: "Partner Tiktok Shop",
+    logo: "brand7.png"
+  },
+  {
+    name: "Partner Walmart",
+    logo: "brand13.jpeg"
+  },
+  {
+    name: "Partner Amazon",
+    logo: "brand8.png"
+  },
+  {
+    name: "Partner Etsy",
+    logo: "brand9.png"
+  },
+  {
+    name: "Partner 2",
+    logo: "brand1.png"
+  },
+  {
+    name: "Partner 3",
+    logo: "brand2.png"
+  },
+  {
+    name: "Partner 4",
+    logo: "brand3.png"
+  },
+  {
+    name: "Partner 5",
+    logo: "brand4.png"
+  },
+  {
+    name: "Partner 6",
+    logo: "brand5.png"
+  },
+
+
+];
+---
+<section id="partners">
+	<div class="flex flex-col justify-center items-center">
+	  <h2 class="text-5xl font-semibold text-#000000 text-center mb-6">Our Partners</h2>
+	  <h3 class="text-3xl text-#000000 text-center mb-6 z-10">Partners have trusted and chosen MangoAGS's services.</h3>
+  
+	  <!-- Scroll View -->
+	  <div class="scroll-view z-0" id="scrollContainer">
+		{partners.map((partner) => (
+		  <div class="partner-item">
+			<img src={partner.logo} alt={partner.name} class="partner-logo" />
+		  </div>
+		))}
+	  </div>
+	</div>
+  </section>
+  
+  <style>
+	.scroll-view {
+	  display: flex;
+	  flex-wrap: nowrap; /* Prevent wrapping */
+	  overflow-x: auto; /* Enable horizontal scrolling */
+	  width: 100%; /* Full width of the container */
+	  padding: 10px 0;
+	  white-space: nowrap; /* Prevent line breaks */
+	  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+	  scrollbar-width: none;
+	}
+  
+	.scroll-view::-webkit-scrollbar {
+	  display: block; /* Make scrollbar visible */
+	  height: 8px; /* Adjust height of the scrollbar */
+	}
+  
+	.scroll-view::-webkit-scrollbar-thumb {
+	  background-color: rgba(0, 0, 0, 0.3); /* Dark scrollbar thumb */
+	  border-radius: 10px;
+	}
+  
+	.partner-item {
+	  min-width: 150px; /* Minimum width for each partner item */
+	  margin-right: 20px; /* Space between partner items */
+	  flex-shrink: 0; /* Prevent shrinking */
+	  transition: transform 0.3s ease;
+	}
+  
+	.partner-item:hover {
+	  transform: scale(1.05); /* Add hover effect */
+	}
+  
+	.partner-logo {
+	  width: 100%; /* Ensures the image fills the container */
+	  height: auto;
+	  display: block;
+	  border-radius: 10px;
+	  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+	}
+  
+	h2, h3 {
+	  z-index: 10;
+	  position: relative;
+	}
+  </style>
+  
+  <script>
+	// JavaScript to enable drag-to-scroll functionality
+	const scrollContainer = document.getElementById("scrollContainer");
+  
+	let isMouseDown = false;
+	let startX;
+	let scrollLeft;
+  
+	// Mouse down event to start dragging
+	scrollContainer.addEventListener("mousedown", (e) => {
+	  isMouseDown = true;
+	  startX = e.pageX - scrollContainer.offsetLeft; // Get the starting position
+	  scrollLeft = scrollContainer.scrollLeft; // Get the current scroll position
+	//   scrollContainer.style.cursor = "grabbing"; // Change cursor to grabbing when dragging
+	});
+  
+	// Mouse leave or up event to stop dragging
+	scrollContainer.addEventListener("mouseup", () => {
+	  isMouseDown = false;
+	//   scrollContainer.style.cursor = "grab"; // Change cursor back to grab
+	});
+  
+	// Mouse move event to move the scroll container
+	scrollContainer.addEventListener("mousemove", (e) => {
+	  if (!isMouseDown) return; // Do nothing if mouse is not pressed
+  
+	  const x = e.pageX - scrollContainer.offsetLeft; // Current mouse position
+	  const walk = (x - startX) * 2; // Calculate how far the mouse has moved (multiplied to make it faster)
+	  scrollContainer.scrollLeft = scrollLeft - walk; // Move the scroll container
+	});
+  </script>
+  

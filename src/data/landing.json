@@ -1,0 +1,217 @@
+{
+	"meta": {
+	  "title": "MangoAGS",
+	  "description": "Amazon API integration",
+	  "lang": "en",
+	  "charset": "UTF-8",
+	  "ldJson": {
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "MangoAGS ",
+		"description": "MangoAGS  is an eCommerce platform integrating Amazon's API to enhance shopping with real-time data.",
+		"url": "mangoags.com",
+		"logo": "./public/mangoags.png",
+		"contactPoint": {
+		  "@type": "ContactPoint",
+		  "email": "contact@mangoags.com",
+		  "contactType": "Client Service"
+		},
+		"sameAs": [
+		  "https://www.twitter.com/yourpage",
+		  "https://www.instagram.com/yourpage",
+		  "https://www.linkedin.com/company/yourpage"
+		]
+	  }
+	},
+	"headerData": {
+	  "logo": "MangoAGS",
+	  
+	  "links": [
+		{ "label": "About", "href": "#about" },
+		{ "label": "Services", "href": "#services-section" },
+		{ "label": "Technology", "href": "#technology" },
+		{ "label": "Partners", "href": "#partners" },
+		{ "label": "Contact", "href": "#contact" },
+		{ "label": "Recruitment", "href": "recruitment" }
+	  ]
+	},
+
+	"headerData2": {
+		"logo": "MangoAGS",
+		
+		"links": [
+			{ "label": "About", "href": "https://mangoags.com/#about" },
+			{ "label": "Services", "href": "https://mangoags.com/#services-section" },
+			{ "label": "Technology", "href": "https://mangoags.com/#technology" },
+			{ "label": "Partners", "href": "https://mangoags.com/#partners" },
+			{ "label": "Contact", "href": "https://mangoags.com/#contact" },
+			{ "label": "Recruitment", "href": "recruitment" }
+		]
+	  },
+
+	"heroData": {
+	  "title": "We empower companies to elevate their revenue to unprecedented levels: Welcome to",
+	  "subTitle": "Take advantage of Amazon's API for a seamless shopping experience. Access real -time product data, inventory and evaluate easily. Optimize ads, take advantage of AI to analyze data from Big Data.",
+	  "primaryCta": "Our Company",
+	  "secondaryCta": "Request a Free Consultation",
+	  "highlightedTitle": "MangoAGS"
+	},
+	"servicesData": {
+	  "title": "Our Service",
+	  "services": [
+		{
+		  "title": "Professional Templates",
+		  "icon": "DevIcon",
+		  "description": "Our templates are crafted by experienced web designers, ensuring a modern and polished look for your site. From typography to element design, every detail is carefully considered to convey a professional image."
+		},
+		{
+		  "title": "Integrated Accessibility",
+		  "icon": "PlanetIcon",
+		  "description": "We care about web accessibility and have integrated features to ensure your site is accessible to all users, including those with visual or motor disabilities. Our templates comply with WCAG accessibility standards to provide an inclusive experience for everyone."
+		},
+		{
+		  "title": "SEO-Optimized",
+		  "icon": "FileIcon",
+		  "description": "Our templates are optimized for SEO, meaning they are structured and coded to be easily indexed by Google and other search engines, improving your ranking in search results."
+		},
+		{
+		  "title": "Amazon API Integration",
+		  "icon": "ConfigIcon",
+		  "description": "Our platform integrates Amazon's API to provide real-time data on product availability, pricing, and reviews. This ensures that our customers get accurate information when shopping with us, enhancing trust and improving the shopping experience."
+		},
+		{
+			"title":" Amazon Optimize Ads",
+			"icon":"ConfigIcon",
+			"description":"We offer Amazon Ads Optimization Service to help your business enhance its advertising effectiveness on the Amazon platform. With our expertise and advanced technology, we are committed to providing you with the best solutions to attract customers and increase sales."
+		}
+	  ]
+	},
+	"adventajesData": {
+	  "title": "Unlock the Power of Our Technologies:                             Discover the Key Benefits",
+	  "adventajes": [
+		{
+		  "title": "Take Your Idea to Perfection",
+		  "description": "Our options for your intuitive intuitive empower you to create a prominent outfit and resonate with your audience than ever. Say goodbye to the available designs and hello to a real world page that reflects your vision and personality.",
+		  "img": "template.webp",
+		  "imageAlt": "this is an image about the template of POD",
+		  "checks": ["Colors", "Fonts", "Layout"]
+		},
+		{
+		  "title": "Reach the Top of Trending",
+		  "description": "In the world of e-commerce, trends move fast. To stay relevant and successful, your products need to be at the forefront of what's hot. That's where our Print on Demand (POD) service comes in - empowering creators like you to Reach the Top of Trending with ease.",
+		  "img": "seo.webp",
+		  "imageAlt": "this is an image about top of trending",
+		  "checks": ["Search Visibility", "Organic Traffic", "Online Credibility"]
+		},
+		{
+		  "title": "Real-Time Data with Amazon SP-API",
+		  "description": "With real-time data from Amazon's API, we ensure the information our customers rely on whether it's pricing, availability, or product reviews is always accurate and up to date. Build trust and enhance the user experience with the power of Amazon.",
+		  "img": "amazon-api.png",
+		  "imageAlt": "this is an image about the Amazon API adventajes",
+		  "checks": ["Real-Time Data", "Customer Trust", "Accurate Information"]
+		},
+		{
+			"title": "Security Data with Amazon Ads API",
+			"description": "Protect your advertising campaigns with Amazon Ads API's robust security features. Enjoy advanced authentication, data encryption, and strict access controls to keep your sensitive data safe. Integrate security seamlessly into your strategy and focus on maximizing ROI with confidence.",
+			"img": "amzadsapi.png",
+			"imageAlt": "this is an image about the Amazon API adventajes",
+			"checks": ["Encoded Data", "User Security", "Saving Money"]
+		  }
+	  ]
+	},
+	"brandsData": {
+	  "title": "Integration with Leading Technologies",
+	  "description": "",
+	  "brands": [
+		{ "label": "React", "icon": "ReactIcon", "href": "https://react.dev/" },
+		{ "label": "Vue", "icon": "VueIcon", "href": "https://vuejs.org/" },
+		{
+		  "label": "Svelte",
+		  "icon": "SvelteIcon",
+		  "href": "https://svelte.dev/"
+		},
+		{
+		  "label": "Solid",
+		  "icon": "SolidIcon",
+		  "href": "https://www.solidjs.com/"
+		},
+		{
+		  "label": "Vercel",
+		  "icon": "VercelIcon",
+		  "href": "https://vercel.com/"
+		},
+		{
+		  "label": "Netlify",
+		  "icon": "NetlifyIcon",
+		  "href": "https://www.netlify.com/"
+		}
+	  ]
+	},
+"pricingData": {
+    "title": "Our Pricing",
+    "tiers": [
+      {
+        "title": "Starter ",
+        "description": "Amazon Ads for Indivisual and Small Businesses",
+        "price": {
+          "amount": "Free"
+        },
+        "features": [
+          "Basic Marketing Templates for Amazon",
+          "Cost-Effective Amazon Ads Management",
+          "Basic Marketing Solutions for Amazon Sellers",
+          "Single Brand Advertising Package ",
+          "Basic customer support"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "title": "Professional",
+        "description": "Advanced Amazon Ads for Growing Brands",
+        "price": {
+          "amount": "$29",
+          "period": "/month"
+        },
+        "features": [
+          "Customizable Ads Templates",
+          "Multi-Product Advertising Integration",
+          "Optimized Ad Campaigns for Business Growth",
+          "Boost Sales with Targeted Amazon Ads",
+          "Priority Support for Growing Brands"
+        ],
+        "cta": "Get started"
+      },
+      {
+        "title": "Enterprise",
+        "description": "Amazon Ads for Enterprise-Level Sellers",
+        "price": {
+          "amount": "$59",
+          "period": "/month"
+        },
+        "features": [
+          "Unlimited Product and Brand Integration",
+          "Customized Advertising Solutions for Enterprises",
+          "Maximize ROI with Amazon Advertising",
+          "Exclusive Tools for High-Volume Sellers",
+          "24/7 dedicated support"
+        ],
+        "cta": "Get started"
+      }
+    ]
+  },
+
+	"footerData": {
+	  "logo": "MangoAGS",
+	  "description": "We ensure complete transparency and security in our integration with Amazon's API, offering our customers accurate and reliable data in a safe online environment.",
+	  "socials": [
+		{ "icon": "FacebookIcon", "href": "https://www.facebook.com/profile.php?id=61554964658321" }
+
+	  ],
+	  "links": [
+    { "label": "Privacy Policy", "href": "/policy" },
+    { "label": "Terms of Service", "href": "/terms" },
+    { "label": "Refund Policy", "href": "/refund" }
+  ]
+	}
+  }
+  

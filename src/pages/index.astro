@@ -1,0 +1,40 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Adventajes from "@/sections/Adventajes.astro";
+import Brands from "@/sections/Brands.astro";
+import Footer from "@/sections/Footer.astro";
+import Header from "@/sections/Header.astro";
+import Hero from "@/sections/Hero.astro";
+import Partner from "@/sections/Partner.astro";
+import Services from "@/sections/Services.astro";
+import { getLandingData } from "@/services/data.service";
+const data = await getLandingData();
+---
+	<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+  
+<Layout meta={data.meta}>
+  <Header data={data.headerData} />
+  <main class="flex flex-col justify-center items-center">
+    <div class="w-3/4">
+      <Hero data={data.heroData} />
+		<div class="image-container" style="padding-bottom: 50px; width: 100%;">
+			<!-- <img src="banner.jpg" alt="Banner" style="width: 100%; height: auto;" /> -->
+			<img src="ebay-amazon.png" alt="Banner" style="width: 100%; height: auto;" />
+		</div>
+      <Services data={data.servicesData} />
+      <Adventajes data={data.adventajesData} />
+      <Brands data={data.brandsData} />
+      <!-- <Pricing data={data.pricingData} /> -->
+	 <Partner />
+-
+
+
+
+</div>
+    <Footer data={data.footerData} />
+  </main>  
+</Layout>
